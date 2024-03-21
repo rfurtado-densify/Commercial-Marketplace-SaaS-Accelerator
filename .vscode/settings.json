@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/fe67c158-dfcc-4276-8617-dc73eb893eae/resourceGroups/densify-SaaS-Accelerator-test/providers/Microsoft.Web/sites/densify-test-portal",
+    "appService.deploySubpath": "."
+}
