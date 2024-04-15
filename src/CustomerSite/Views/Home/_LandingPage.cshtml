@@ -11,9 +11,9 @@
     <div class="container" id="divHome">
         <form method="post" id="frmIndex">
 
-            <div class="text-white mt20">
+            @* <div class="text-white mt20">
                 <span class="cm-section-heading">Subscription Details</span>
-            </div>
+            </div> *@
             @if (Model != null && !string.IsNullOrEmpty(Model.ErrorMessage))
             {
                 <div class="alert alert-danger">
@@ -22,6 +22,7 @@
             }
             else
             {
+                @* -- Original page with purchase information --
                 <div class="cm-panel-default mt20">
                     <dl class="row text-left">
                         <dt class="col-sm-3 p-2 p10">
@@ -201,7 +202,19 @@
                     {
                         <a onclick="SubscriptionOperation('@Model.Id','@Model.PlanId','Activate')" id="btnActive" class="cm-button-default text-end" style="text-decoration:none;">Subscribe</a>
                     }
-                </div>
+                </div> *@
+                 <div class="pt-5">
+        <div class="card p-3 ">
+            <div class="text-center">
+                <h1 class="display-4">Welcome to Densify</h1>
+            </div>
+            <div>
+                <p>Thank you for accepting the offer for a Densify Subscription.</p> 
+                <p> Densify will reach out to you to schedule next steps in the next 24 hours.</p> 
+                <p>If you have any questions before then, please email <a href="mailto:answers@densify.com">answers@densify.com</a>.</p>                        
+            </div>
+        </div>
+    </div>
             }
         </form>
     </div>
